@@ -2,13 +2,13 @@
 for_window [class="^.*"] border pixel 5
 
 # border color
-client.focused #ffffff #ffffff #ffffff #ffffff
-client.focused_inactive #02050f #02050f #02050f #02050f
-client.unfocused #02050f #02050f #02050f #02050f
-client.urgent #889cb6 #889cb6 #889cb6 #889cb6
+client.focused #c29d2b #c29d2b #c29d2b #c29d2b
+client.focused_inactive #171819 #171819 #171819 #171819
+client.unfocused #171819 #171819 #171819 #171819
+client.urgent #d90f1e #d90f1e #d90f1e #d90f1e
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Wallpapers/Landscape/983724.jpg
+exec_always --no-startup-id feh --bg-scale ~/Wallpapers/BSD/bsd3.jpg
 
 # gaps
 gaps outer 10
@@ -98,13 +98,13 @@ bar {
 	position top
 	status_command i3status
 	colors {
-		background #02050f
-		statusline #ccdcf3
-		separator  #ccdcf3
-		focused_workspace #388add #388add #ccdcf3
-		active_workspace #02050f #02050f #ccdcf3
-		inactive_workspace #02050f #02050f #ccdcf3
-		urgent_workspace #889cb6 #889cb6 #ccdcf3
+		background #010000
+		statusline #c29d2b
+		separator  #c29d2b
+		focused_workspace #c29d2b #c29d2b #010000
+		active_workspace #010000 #010000 #c29d2b
+		inactive_workspace #010000 #010000 #c29d2b
+		urgent_workspace #d90f1e #d90f1e #010000
 	}
 }
 
