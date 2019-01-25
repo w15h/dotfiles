@@ -5,26 +5,26 @@ URxvt.depth: 24
 URxvt.internalBorder: 10
 URxvt.externalBorder: 0
 
-*foreground: #ccdcf3
-*background: #02050f
-*cursorColor: #ccdcf3
-*.color0: #02050f
-*.color8: #02050f
-*.color1: #388add
-*.color9: #388add
-*.color2: #5988ca
-*.color10: #5988ca
-*.color3: #6892d4
-*.color11: #6892d4
-*.color4: #6ea2ea
-*.color12: #6ea2ea
-*.color5: #889cb6
-*.color13: #889cb6
-*.color6: #8cb4f1
-*.color14: #8cb4f1
-*.color7: #ccdcf3
-*.color15: #ccdcf3
-*.color66: #02050f
+*foreground: #cbb8af
+*background: #010000
+*cursorColor: #cbb8af
+*.color0: #010000
+*.color8: #010000
+*.color1: #9b1418
+*.color9: #9b1418
+*.color2: #d90f1e
+*.color10: #d90f1e
+*.color3: #995c0e
+*.color11: #995c0e
+*.color4: #9b6154
+*.color12: #9b6154
+*.color5: #d8525f
+*.color13: #d8525f
+*.color6: #c29d2b
+*.color14: #c29d2b
+*.color7: #cbb8af
+*.color15: #cbb8af
+*.color66: #010000
 
 rofi.font: monospace bold 10
 rofi.bw: 0
