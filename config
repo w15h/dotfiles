@@ -17,6 +17,12 @@ gaps inner 30
 # compton
 exec_always --no-startup-id compton
 
+# volume full
+bindsym XF86AudioRaiseVolume exec +100
+
+# volume mute
+bindsym XF86AudioMute exec mixer -0
+
 # browser
 bindsym $mod+b exec --no-startup-id firefox
 
