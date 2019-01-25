@@ -1,0 +1,37 @@
+URxvt.geometry: 71x22
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt.depth: 24
+URxvt.internalBorder: 10
+URxvt.externalBorder: 0
+
+*foreground: #ccdcf3
+*background: #02050f
+*cursorColor: #ccdcf3
+*.color0: #02050f
+*.color8: #02050f
+*.color1: #388add
+*.color9: #388add
+*.color2: #5988ca
+*.color10: #5988ca
+*.color3: #6892d4
+*.color11: #6892d4
+*.color4: #6ea2ea
+*.color12: #6ea2ea
+*.color5: #889cb6
+*.color13: #889cb6
+*.color6: #8cb4f1
+*.color14: #8cb4f1
+*.color7: #ccdcf3
+*.color15: #ccdcf3
+*.color66: #02050f
+
+rofi.font: monospace bold 10
+rofi.bw: 0
+rofi.hide-scrollbar: true
+rofi.width: 20
+rofi.lines: 10
+rofi.location: 2
+rofi.padding: 10
+rofi.color-window: #02050f, #02050f, #02050f
+rofi.color-normal: #02050f, #ccdcf3, #02050f, #02050f, #388add
