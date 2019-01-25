@@ -1,0 +1,115 @@
+# border size
+for_window [class="^.*"] border pixel 5
+
+# border color
+client.focused #ffffff #ffffff #ffffff #ffffff
+client.focused_inactive #02050f #02050f #02050f #02050f
+client.unfocused #02050f #02050f #02050f #02050f
+client.urgent #889cb6 #889cb6 #889cb6 #889cb6
+
+# wallpaper
+exec_always --no-startup-id feh --bg-scale ~/Wallpapers/Landscape/983724.jpg
+
+# gaps
+gaps outer 10
+gaps inner 30
+
+# compton
+exec_always --no-startup-id compton
+
+# browser
+bindsym $mod+b exec --no-startup-id firefox
+
+# modkey
+set $mod Mod1
+
+# font
+font pango:monospace 8
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id urxvt
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start rofi
+bindsym $mod+d exec --no-startup-id rofi -show run
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split horizontal
+bindsym $mod+h split h
+
+# split vertical
+bindsym $mod+v split v
+
+# fullscreen
+bindsym $mod+f fullscreen toggle
+
+# floating / tiling toggle
+bindsym $mod+Shift+f floating toggle
+
+# change focus tiling / floating
+bindsym $mod+space focus mode_toggle
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# workspace specific
+assign [class="Firefox"] 1
+
+#reload config
+bindsym $mod+Shift+c reload
+
+#restart i3
+bindsym $mod+Shift+r restart
+
+# i3bar
+bar {
+	font pango:monospace 8
+	position top
+	status_command i3status
+	colors {
+		background #02050f
+		statusline #ccdcf3
+		separator  #ccdcf3
+		focused_workspace #388add #388add #ccdcf3
+		active_workspace #02050f #02050f #ccdcf3
+		inactive_workspace #02050f #02050f #ccdcf3
+		urgent_workspace #889cb6 #889cb6 #ccdcf3
+	}
+}
+
+mode "resize" {
+	bindsym Left resize shrink width 10 px or 10 ppt
+	bindsym Down resize grow height 10 px or 10 ppt
+	bindsym Up resize shrink height 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
